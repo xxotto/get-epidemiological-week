@@ -42,7 +42,7 @@ That is actually a copy of your initial dataset with 2 new columns
 4. Now I modify the input arguments of the **main** function
     - **df**: which is my variable where my dataset is located
     - **"important_date"**: (between quotes) which is the name of the header of my date column from my **dataset.csv**
-    - **"%d/%m/%Y"**: which is the date format of **"important_date"** (ex. 12/25/2019)
+    - **"%d/%m/%Y"**: (between quotes) which is the date format of **"important_date"** (ex. 12/25/2019)
 <!-- -->
     main(df, "important_date", "%d/%m/%Y")
 
