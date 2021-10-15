@@ -12,7 +12,7 @@ def main(dataset, my_date_header, date_format):
     
     
 
-# Convert string to date
+# Convert string to date function
 def string_to_date(dataset, my_date_header, date_format):
     
     temp_date = pd.to_datetime(dataset[my_date_header], 
@@ -21,14 +21,14 @@ def string_to_date(dataset, my_date_header, date_format):
 
 
 
-# Returns year and epidemiological week in two columns
+# Returns year and epidemiological function
 def date_to_epiweek(dataset, temp_date):
     
     epi_date = temp_date.apply(lambda date_name : Week.fromdate(date_name).weektuple())
     dataset[["epi_year","epi_week"]] = pd.DataFrame(epi_date.tolist())
     return dataset
     
-
-
+    
+# Modify this arguments according to your data
 df = pd.read_csv("dataset.csv")
 main(df, "important_date", "%d/%m/%Y")
