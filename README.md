@@ -1,4 +1,4 @@
-# get_epidemiological_week
+# get-epidemiological-week
 
 Function based on  **"epiweeks"** package that returns the year and number of epidemiological week from a date in any format
 
