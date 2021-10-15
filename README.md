@@ -40,6 +40,7 @@ That is actually a copy of your initial dataset with 2 new columns
     df = pd.read_csv("dataset.csv")
 
 4. Now I modify the input arguments of the **main** function
+
     - **df**: which is my variable where my dataset is located
     - **"important_date"**: (between quotes) which is the name of the header of my date column from my **dataset.csv**
     - **"%d/%m/%Y"**: (between quotes) which is the date format of **"important_date"** (ex. 12/25/2019)
